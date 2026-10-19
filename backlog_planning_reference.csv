@@ -1,0 +1,25 @@
+﻿case_id,project,title,kind,priority,weight,team,epic,iteration,milestone,workflow,blocked_by
+API-01,payment-api,[API-01] Payment status endpoint,Feature,High,5,Core Payments,Payment Reliability,Sprint 1,Beta Merchant Payment,Backlog,-
+API-02,payment-api,[API-02] Validate payment request,Feature,High,3,Core Payments,Payment Reliability,Sprint 1,Beta Merchant Payment,Backlog,-
+API-03,payment-api,[API-03] Merchant token scope,Feature,Critical,8,Security & QA,Compliance Readiness,Sprint 1,Beta Merchant Payment,Doing,-
+API-04,payment-api,[API-04] Webhook signature and replay guard,Feature,High,5,Core Payments,Payment Reliability,Sprint 2,Beta Merchant Payment,Backlog,-
+API-05,payment-api,[API-05] Investigate settlement timeout,Bug,Critical,8,Core Payments,Payment Reliability,Sprint 2,Beta Merchant Payment,Doing,-
+API-06,payment-api,[API-06] Settlement API contract,Feature,Critical,8,Core Payments,Payment Reliability,Sprint 1,Beta Merchant Payment,Doing,-
+API-07,payment-api,[API-07] Daily reconciliation export,Feature,Medium,3,Core Payments,Payment Reliability,Sprint 2,Pilot Readiness,Backlog,API-01
+API-08,payment-api,[API-08] Transaction audit trail,Feature,High,5,Security & QA,Compliance Readiness,Sprint 2,Pilot Readiness,Backlog,API-03
+API-09,payment-api,[API-09] Payment SLO dashboard metrics,Feature,Medium,3,Core Payments,Payment Reliability,Sprint 2,Pilot Readiness,Backlog,API-01
+API-10,payment-api,[API-10] End-to-end integration test,Feature,High,5,Security & QA,Compliance Readiness,Sprint 2,Beta Merchant Payment,Backlog,API-03; API-04
+API-11,payment-api,[API-11] Merchant onboarding eligibility service,Feature,High,5,Core Payments,Fast Merchant Onboarding,Sprint 1,Beta Merchant Payment,Backlog,-
+API-12,payment-api,[API-12] e-KYC controls review,Feature,High,3,Security & QA,Compliance Readiness,Sprint 2,Pilot Readiness,Backlog,-
+WEB-01,merchant-web,[WEB-01] Merchant onboarding form,Feature,High,5,Merchant Experience,Fast Merchant Onboarding,Sprint 1,Beta Merchant Payment,Backlog,API-11
+WEB-02,merchant-web,[WEB-02] Merchant settlement UI,Feature,Critical,8,Merchant Experience,Payment Reliability,Sprint 2,Beta Merchant Payment,Doing,API-06
+WEB-03,merchant-web,[WEB-03] Payment status badge,Feature,Medium,2,Merchant Experience,Payment Reliability,Sprint 1,Beta Merchant Payment,Backlog,API-01
+WEB-04,merchant-web,[WEB-04] Merchant form validation,Feature,High,3,Merchant Experience,Fast Merchant Onboarding,Sprint 1,Beta Merchant Payment,Backlog,-
+WEB-05,merchant-web,[WEB-05] Payment checkout demo,Feature,Medium,5,Merchant Experience,Fast Merchant Onboarding,Sprint 2,Pilot Readiness,Backlog,API-02
+WEB-06,merchant-web,[WEB-06] Merchant dashboard summary,Feature,Medium,3,Merchant Experience,Fast Merchant Onboarding,Sprint 2,Pilot Readiness,Backlog,API-01
+WEB-07,merchant-web,[WEB-07] Accessibility review,Feature,Medium,2,Security & QA,Fast Merchant Onboarding,Sprint 2,Pilot Readiness,Backlog,WEB-01
+WEB-08,merchant-web,[WEB-08] Merchant FAQ and support guide,Feature,Low,2,Merchant Experience,Fast Merchant Onboarding,Sprint 2,Pilot Readiness,Backlog,-
+WEB-09,merchant-web,[WEB-09] Timeout and retry UX,Feature,High,5,Merchant Experience,Payment Reliability,Sprint 2,Beta Merchant Payment,Backlog,API-05
+WEB-10,merchant-web,[WEB-10] Coordinate merchant beta UAT,Feature,High,5,Security & QA,Fast Merchant Onboarding,Sprint 2,Beta Merchant Payment,Backlog,API-10; WEB-04
+WEB-11,merchant-web,[WEB-11] Update release and rollback README,Feature,Medium,2,Merchant Experience,Compliance Readiness,Sprint 2,Pilot Readiness,Backlog,-
+WEB-12,merchant-web,[WEB-12] Consent and privacy notice,Feature,High,3,Security & QA,Compliance Readiness,Sprint 2,Pilot Readiness,Backlog,API-12
